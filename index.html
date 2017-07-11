@@ -341,8 +341,7 @@
 
       
         
-          
-            <h1 id="Hexo-Next在Github上搭建博客教程"><a href="#Hexo-Next在Github上搭建博客教程" class="headerlink" title="Hexo+Next在Github上搭建博客教程"></a>Hexo+Next在Github上搭建博客教程</h1><hr>
+          <h1 id="Hexo-Next在Github上搭建博客教程"><a href="#Hexo-Next在Github上搭建博客教程" class="headerlink" title="Hexo+Next在Github上搭建博客教程"></a>Hexo+Next在Github上搭建博客教程</h1><hr>
 <p>摘要：本文是一篇介绍如何在windows系统下搭建独立博客的教程，主要使用<a href="https://hexo.io/zh-cn/" target="_blank" rel="external">Hexo</a>和<a href="http://theme-next.iissnan.com/" target="_blank" rel="external">Next</a>主题在<a href="https://github.com/" target="_blank" rel="external">github</a>上搭建。</p>
 <hr>
 <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>为什么要写博客？这里推荐一篇知乎专栏文章。 <a href="https://zhuanlan.zhihu.com/p/19743861?columnSlug=cnfeat" target="_blank" rel="external">你为什么要写博客 陈素封</a> </p>
@@ -354,43 +353,13 @@
 <li>注册<a href="https://github.com/" target="_blank" rel="external">github</a>账号</li>
 <li>安装<a href="https://nodejs.org/en/" target="_blank" rel="external">node.js</a>和<a href="https://git-scm.com/" target="_blank" rel="external">Git</a> </li>
 </ol>
-<h3 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h3><p>有关Hexo的具体使用，详见<a href="https://hexo.io/zh-cn" target="_blank" rel="external">官网</a></p>
-<p>安装方式使用Git Bash，输入下面命令即可安装Hexo工具</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install -g hexo-cli</div></pre></td></tr></table></figure>
-<p>安装完Hexo后，自己选择合适的磁盘位置，执行右键Git bash Here,然后执行下面的命令，Hexo将会在制定的文件夹中新建所需要的文件。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">hexo init &lt;folder&gt;</div><div class="line"><span class="built_in">cd</span> &lt;folder&gt;</div><div class="line">npm install</div></pre></td></tr></table></figure>
-<p>这里的 <folder> 是文件夹的名字，可以自定义，博客的文件资源都会存储在这个文件夹中。</folder></p>
-<p>执行完命令后，在文件夹下的_config.yml文件是网站的配置文件，后续需要对此文件进行修改以完成网站的配置。</p>
-<p>在这一步我们就可以将网站在本地跑起来，只需要执行下面的命令：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo server</div></pre></td></tr></table></figure>
-<p>然后使用浏览器打开<a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a>就可以在本地查看效果。Hexo默认主题使用的是landspace, 这里推荐使用Next主题，或者如果自己喜欢其他主题也可以自己更换。</p>
-<h3 id="安装Next主题"><a href="#安装Next主题" class="headerlink" title="安装Next主题"></a>安装Next主题</h3><p>有关Next的详细使用方法可以去 <a href="http://theme-next.iissnan.com/" target="_blank" rel="external">官网</a> 查看。这里只做简单的说明。</p>
-<p>在Hexo站点目录下使用右键Git Bash Here, 然后执行下面命令</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git <span class="built_in">clone</span> https://github.com/iissnan/hexo-theme-next themes/next</div></pre></td></tr></table></figure>
-<p>安装完之后启用主题，打开站点目录下面的配置文件_config.yml。 找到 <code>theme</code> 字段，并将其值更改为 <code>next</code></p>
-<p>这里说明一下，在 Hexo 中有两份主要的配置文件，其名称都是 _config.yml。 其中，一份位于站点根目录下，主要包含 Hexo 本身的配置；另一份位于主题目录下，这份配置由主题作者提供，主要用于配置主题相关的选项。</p>
-<p>Next主题有很多个性化配置，具体去官网查看更加方便。</p>
-<p>如果想使用其他主题，可以去这里寻找：<a href="https://hexo.io/themes/" target="_blank" rel="external">Hexo 主题</a></p>
-<h3 id="将博客部署到Github上"><a href="#将博客部署到Github上" class="headerlink" title="将博客部署到Github上"></a>将博客部署到Github上</h3><p>首先需要在github上新建一个 <strong>username.github.io</strong> 的repository，username为你的github用户名。</p>
-<p>这里我们使用ssh连接方式和github进行连接。首先在git命令行中对git进行全局配置</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git config --global user.name <span class="string">"你的用户名"</span></div><div class="line">git config --global user.email <span class="string">"你的邮箱地址"</span></div></pre></td></tr></table></figure>
-<p>检查是否生成过key</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> ~/.ssh</div></pre></td></tr></table></figure>
-<p>如果没有生成过，使用下面命令生成</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh-keygen -t rsa -C <span class="string">"邮箱地址"</span></div></pre></td></tr></table></figure>
-<p>这里如果不想设置密码可以直接回车，密码为空。然后在C盘用户文件夹中会发现一个隐藏文件夹，文件夹名字为 <strong>.ssh</strong> ，然后在github网站setting中找到添加SSh key 的菜单 ,将id_rsa.pub 的内容全部复制到key的编辑框中，保存。</p>
-<p>回到git命令行，输入</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh  -T git@github.com</div></pre></td></tr></table></figure>
-<p>这里会要求你输入SSH key密码，如果刚才生成SSH key时未输入密码，密码就为空；然后看到信息：<br> Hi 用户名! You’ve successfully authenticated；说明配置成功；</p>
-<p>使用git部署网站需要安装<a href="https://github.com/hexojs/hexo-deployer-git" target="_blank" rel="external">hexo-deployer-git</a></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-deployer-git --save</div></pre></td></tr></table></figure>
-<p>然后对网站配置文件，即站点目录文件下的_config.yml 文件中的deploy字段设置：</p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repo: &lt;repository url&gt;</div><div class="line">  branch: [branch]</div></pre></td></tr></table></figure>
-<p>repository url 可以直接在github上使用Clone or download 按钮中进行复制。配置完成后使用下面命令即可将网站配置到github上。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo deploy</div></pre></td></tr></table></figure>
-<p>如果想要使用自定义的域名，需要在/thems/next/source 文件夹下新建<code>CNAME</code> 文件，主义没有后缀名，直接将自己的域名写入。然后在域名服务解析中添加CNAME解析记录即可。</p>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/07/Build-blog/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
