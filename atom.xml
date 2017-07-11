@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.liufeng.science/"/>
-  <updated>2017-07-11T15:52:27.969Z</updated>
+  <updated>2017-07-11T15:54:17.951Z</updated>
   <id>http://www.liufeng.science/</id>
   
   <author>
@@ -16,11 +16,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Build blog</title>
+    <title>Hexo+Next在Github上搭建博客教程</title>
     <link href="http://www.liufeng.science/2017/07/Build-blog/"/>
     <id>http://www.liufeng.science/2017/07/Build-blog/</id>
     <published>2017-07-11T15:49:14.000Z</published>
-    <updated>2017-07-11T15:52:27.969Z</updated>
+    <updated>2017-07-11T15:54:17.951Z</updated>
     
     <content type="html"><![CDATA[<h1 id="Hexo-Next在Github上搭建博客教程"><a href="#Hexo-Next在Github上搭建博客教程" class="headerlink" title="Hexo+Next在Github上搭建博客教程"></a>Hexo+Next在Github上搭建博客教程</h1><hr>
 <p>摘要：本文是一篇介绍如何在windows系统下搭建独立博客的教程，主要使用<a href="https://hexo.io/zh-cn/" target="_blank" rel="external">Hexo</a>和<a href="http://theme-next.iissnan.com/" target="_blank" rel="external">Next</a>主题在<a href="https://github.com/" target="_blank" rel="external">github</a>上搭建。</p>
