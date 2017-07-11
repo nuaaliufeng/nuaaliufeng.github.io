@@ -95,7 +95,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="技术贴," />
 
 
 
@@ -111,15 +111,17 @@
 
 
 
-<meta name="description" content="改变自己，改变世界。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="独孤锋的树洞">
-<meta property="og:url" content="http://www.liufeng.science/index.html">
+<meta name="description" content="Hexo+Next在Github上搭建博客教程 摘要：本文是一篇介绍如何在windows系统下搭建独立博客的教程，主要使用Hexo和Next主题在github上搭建。  前言为什么要写博客？这里推荐一篇知乎专栏文章。 你为什么要写博客 陈素封   如果一件事情你不能讲清楚，十有八九你还没有完全理解。  很多时候总是眼高手低，以为自己都会了，但是如果让你写出来，讲出来，才发现根本没办法解释清楚。既然">
+<meta name="keywords" content="技术贴">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Build blog">
+<meta property="og:url" content="http://www.liufeng.science/2017/07/Build-blog/index.html">
 <meta property="og:site_name" content="独孤锋的树洞">
-<meta property="og:description" content="改变自己，改变世界。">
+<meta property="og:description" content="Hexo+Next在Github上搭建博客教程 摘要：本文是一篇介绍如何在windows系统下搭建独立博客的教程，主要使用Hexo和Next主题在github上搭建。  前言为什么要写博客？这里推荐一篇知乎专栏文章。 你为什么要写博客 陈素封   如果一件事情你不能讲清楚，十有八九你还没有完全理解。  很多时候总是眼高手低，以为自己都会了，但是如果让你写出来，讲出来，才发现根本没办法解释清楚。既然">
+<meta property="og:updated_time" content="2017-07-11T15:49:57.674Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="独孤锋的树洞">
-<meta name="twitter:description" content="改变自己，改变世界。">
+<meta name="twitter:title" content="Build blog">
+<meta name="twitter:description" content="Hexo+Next在Github上搭建博客教程 摘要：本文是一篇介绍如何在windows系统下搭建独立博客的教程，主要使用Hexo和Next主题在github上搭建。  前言为什么要写博客？这里推荐一篇知乎专栏文章。 你为什么要写博客 陈素封   如果一件事情你不能讲清楚，十有八九你还没有完全理解。  很多时候总是眼高手低，以为自己都会了，但是如果让你写出来，讲出来，才发现根本没办法解释清楚。既然">
 
 
 
@@ -147,13 +149,13 @@
 
 
 
-  <link rel="canonical" href="http://www.liufeng.science/"/>
+  <link rel="canonical" href="http://www.liufeng.science/2017/07/Build-blog/"/>
 
 
 
 
 
-  <title>独孤锋的树洞</title>
+  <title>Build blog | 独孤锋的树洞</title>
   
 
 
@@ -178,9 +180,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-   page-home 
- ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -263,9 +263,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -291,9 +291,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/07/Build-blog/" itemprop="url">Build blog</a></h1>
+          <h1 class="post-title" itemprop="name headline">Build blog</h1>
         
 
         <div class="post-meta">
@@ -340,9 +338,7 @@
       
 
       
-        
-          
-            <h1 id="Hexo-Next在Github上搭建博客教程"><a href="#Hexo-Next在Github上搭建博客教程" class="headerlink" title="Hexo+Next在Github上搭建博客教程"></a>Hexo+Next在Github上搭建博客教程</h1><hr>
+        <h1 id="Hexo-Next在Github上搭建博客教程"><a href="#Hexo-Next在Github上搭建博客教程" class="headerlink" title="Hexo+Next在Github上搭建博客教程"></a>Hexo+Next在Github上搭建博客教程</h1><hr>
 <p>摘要：本文是一篇介绍如何在windows系统下搭建独立博客的教程，主要使用<a href="https://hexo.io/zh-cn/" target="_blank" rel="external">Hexo</a>和<a href="http://theme-next.iissnan.com/" target="_blank" rel="external">Next</a>主题在<a href="https://github.com/" target="_blank" rel="external">github</a>上搭建。</p>
 <hr>
 <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>为什么要写博客？这里推荐一篇知乎专栏文章。 <a href="https://zhuanlan.zhihu.com/p/19743861?columnSlug=cnfeat" target="_blank" rel="external">你为什么要写博客 陈素封</a> </p>
@@ -390,42 +386,56 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo deploy</div></pre></td></tr></table></figure>
 <p>如果想要使用自定义的域名，需要在/thems/next/source 文件夹下新建<code>CNAME</code> 文件，主义没有后缀名，直接将自己的域名写入。然后在域名服务解析中添加CNAME解析记录即可。</p>
 
-          
+      
+    </div>
+
+    <div>
+      
         
+
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
     <div>
+      
+        
+
       
     </div>
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/技术贴/" rel="tag"># 技术贴</a>
+          
+        </div>
+      
+
+      
+      
+      
 
       
 
       
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -433,6 +443,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -452,8 +466,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/uploads/icon.jpg"
@@ -526,6 +549,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Hexo-Next在Github上搭建博客教程"><span class="nav-number">1.</span> <span class="nav-text">Hexo+Next在Github上搭建博客教程</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#博客搭建教程"><span class="nav-number">1.2.</span> <span class="nav-text">博客搭建教程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#工具准备"><span class="nav-number">1.2.1.</span> <span class="nav-text">工具准备</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装Hexo"><span class="nav-number">1.2.2.</span> <span class="nav-text">安装Hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装Next主题"><span class="nav-number">1.2.3.</span> <span class="nav-text">安装Next主题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#将博客部署到Github上"><span class="nav-number">1.2.4.</span> <span class="nav-text">将博客部署到Github上</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -655,10 +694,10 @@
 
 
   
-    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
 
-  
+
 
   
 
